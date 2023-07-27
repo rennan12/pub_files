@@ -16,18 +16,6 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
---
--- Name: Role; Type: TYPE; Schema: public; Owner: postgres
---
-
-CREATE TYPE public."Role" AS ENUM (
-    'ADMIN',
-    'USER'
-);
-
-
-ALTER TYPE public."Role" OWNER TO postgres;
-
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
